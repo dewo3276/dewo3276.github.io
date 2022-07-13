@@ -1,0 +1,66 @@
+#landingPage {
+  h1 {
+    font-size: 500%;
+    text-indent: 0.5em;
+    font-family: baseFont;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 10%;
+  }
+
+  #Acier,
+  #Flegrei,
+  #fairyTale,
+  #iskra,
+  #lores {}
+
+  #U1,
+  #Y1 {
+    transform-style: preserve-3d;
+    animation: onLoad 1500ms cubic-bezier(0.56, -0.35, 0.59, 0.91) forwards;
+  }
+
+  #slotMachineAnimation {
+    margin: -5% 10% 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@keyframes onLoad {
+  100% {
+    transform: translate3d(0, -100%, 0) rotateX(-90deg);
+  }
+}
+@keyframes onLoadReverse {
+  100% {
+    transform: translate3d(0, 100%, 0) rotateX(90deg);
+  }
+}
+
+#workShowCase {
+  display: flex;
+  justify-content: space-around;
+  margin: 20% 5% 0;
+
+  img:nth-child(even) {
+    margin-top: 10%;
+  }
+
+  img:nth-child(3n) {
+    margin-top: -10%;
+  }
+}
+
+#aboutMe {
+  margin: 0% 5% 0;
+
+  h1 {
+    font-size: 500%;
+    text-align: right;
+  }
+
+  p {
+    text-align: right;
+    font-size: 200%;
+  }
+}
